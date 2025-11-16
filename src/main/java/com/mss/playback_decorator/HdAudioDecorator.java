@@ -1,0 +1,17 @@
+package com.mss.playback_decorator;
+
+public class HdAudioDecorator extends StreamDecorator {
+    public HdAudioDecorator(TrackStream inner) {
+        super(inner);
+    }
+
+    @Override
+    public String readChunk() {
+        return super.readChunk() + " [HD]";
+    }
+
+    @Override
+    public String info() {
+        return super.info() + " + HD";
+    }
+}
