@@ -2,20 +2,20 @@ package com.mss.facade.music.app;
 
 import java.util.List;
 
-import com.mss.auth_factory.music.factory.DefaultUserFactory;
-import com.mss.auth_factory.music.user.User;
-import com.mss.auth_factory.music.factory.UserFactory;
-import com.mss.auth_factory.music.user.UserTier;
-import com.mss.catalog_builder.Track;
-import com.mss.recommend_strategy.music.repository.TrackRepository;
-import com.mss.notify_observer.music.core.EventBus;
-import com.mss.notify_observer.music.events.ReleaseEvent;
-import com.mss.playback_decorator.music.concretecomponent.BasicStream;
-import com.mss.playback_decorator.music.decorator.HdAudioDecorator;
-import com.mss.playback_decorator.music.decorator.LyricsDecorator;
-import com.mss.playback_decorator.music.component.TrackStream;
-import com.mss.recommend_strategy.music.context.RecommendationContext;
-import com.mss.recommend_strategy.music.strategy.RecommendationStrategy;
+import com.mss.factory_auth.music.factory.DefaultUserFactory;
+import com.mss.factory_auth.music.user.User;
+import com.mss.factory_auth.music.factory.UserFactory;
+import com.mss.factory_auth.music.user.UserTier;
+import com.mss.builder_catalog.Track;
+import com.mss.strategy_recommend.music.repository.TrackRepository;
+import com.mss.observer_notify.music.core.EventBus;
+import com.mss.observer_notify.music.events.ReleaseEvent;
+import com.mss.decorator_playback.music.concretecomponent.BasicStream;
+import com.mss.decorator_playback.music.decorator.HdAudioDecorator;
+import com.mss.decorator_playback.music.decorator.LyricsDecorator;
+import com.mss.decorator_playback.music.component.TrackStream;
+import com.mss.strategy_recommend.music.context.RecommendationContext;
+import com.mss.strategy_recommend.music.strategy.RecommendationStrategy;
 
 public class AppFacade {
     private final UserFactory userFactory = new DefaultUserFactory();

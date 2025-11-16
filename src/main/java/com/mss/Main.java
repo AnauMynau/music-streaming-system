@@ -2,13 +2,13 @@ package com.mss;
 
 
 import com.mss.facade.music.app.AppFacade;
-import com.mss.auth_factory.music.user.User;
-import com.mss.auth_factory.music.user.UserTier;
-import com.mss.catalog_builder.*;
-import com.mss.playback_decorator.music.component.TrackStream;
-import com.mss.recommend_strategy.music.repository.InMemoryTrackRepository;
-import com.mss.recommend_strategy.music.repository.TrackRepository;
-import com.mss.recommend_strategy.music.strategy.ByGenreStrategy;
+import com.mss.factory_auth.music.user.User;
+import com.mss.factory_auth.music.user.UserTier;
+import com.mss.builder_catalog.*;
+import com.mss.decorator_playback.music.component.TrackStream;
+import com.mss.strategy_recommend.music.repository.InMemoryTrackRepository;
+import com.mss.strategy_recommend.music.repository.TrackRepository;
+import com.mss.strategy_recommend.music.strategy.ByGenreStrategy;
 
 public class Main {
     public static void main(String[] args) {
